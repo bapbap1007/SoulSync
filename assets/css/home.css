@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.home-img{
+width: 55rem;
+height: 56.25rem;
+background-image: url('../img/home.jpeg');
+background-size: cover;
+}
+
+.home-title  {
+    padding-top: 15rem; 
+    padding-left: 30px;
+}
+
+.home-title>h2, .home-title>p {
+font-weight: 500;
+font-family: "Montserrat", sans-serif;
+}
+
+.home-title>h2 {
+    font-size: 60px;
+    line-height: 90px;
+}
+
+.home-title p {
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.search-container {
+    width: 447px;
+    height: 158px;
+    border-radius: 16px;
+    padding: 48px 24px 48px 24px; 
+    gap: 40px;
+   margin-left:  200px;
+   margin-top: 160px;
+}
+
+.search-button {
+    width: 180px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 56px;
+}
+
+.search-button:hover {
+   cursor: pointer;
+}

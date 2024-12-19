@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.soulAI-wrapper {
+    position: relative;
+    background-image: linear-gradient(#034D9A, #011A34, #011A34, #011A34);
+    width: 100%;
+    height: 150vh;
+}
+
+.search-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 812px;
+    height: 376px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.search-wrapper .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 150px;
+    color: #FFFFFF;
+}
+
+.search-button {
+    display: flex;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-radius: 50%, 10%, 50%, 10%;
+    ;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+input {
+    width: 80%;
+    z-index: 1;
+    border: none;
+    outline: none;
+
+}

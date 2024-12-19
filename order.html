@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/customNav.css">
+    <link rel="stylesheet" href="./assets/css/order.css">
+    <link rel="stylesheet" href="./assets/Fontico/css/all.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/home.jpeg">
+
+
+    <title>SoulSync | Book</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <div class="header">
+            <div class="navbar">
+
+                <div class="navbar-link">
+                    <div class="navbar-logo">
+                        <div class="logo-frame">
+                            <img class="logo-img" src="./assets/img/image.png" alt="" srcset="">
+                        </div>
+                        <div class="logo-brand__text">
+                            <p>SoulSync</p>
+                        </div>
+                    </div>
+                    <div class="navbar-links">
+
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Về chúng tôi </a></li>
+                        <li><a href="order.html" style="color:#011A29">Đặt lịch tư vấn</a></li>
+                        <li><a href="soulAI.html">The soul AI</a></li>
+                        <li><a href="forum.html">Diễn đàn</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+
+                    </div>
+                </div>
+                <div class="navbar-button">
+                    <button class="navbar-btn" onclick="document.location = 'login.html'">Đăng nhập</button>
+                    <button class="navbar-btn" onclick="document.location = 'register.html'">Đăng ký</button>
+                </div>
+                <div class="user-dropdown">
+                    <div class="user-info">
+                        <span class="user-name">Xin chào, Hiền</span>
+                        <div class="dropdown-icon">&#9660;</div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="container">
+            <div class="order">
+                <div class="order-wrapper">
+                    <div class="hero-img"></div>
+                    <div class="order-contents">
+                        <div class="title-wrapper">
+                            <h1>Đặt lịch tư vấn chỉ trong vài giây</h1>
+                            <p>SoulSync giúp bạn tạo ra những buổi tư vấn tâm lý đầy chất lượng và hiệu quả với độ ngũ
+                                tư
+                                vấn
+                                tâm lý dày dặn kinh nghiệm. Hãy thử ngay</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-box"></div>
+                <div class="order-searchfield">
+                    <div class="title">
+                        <h1>Tìm chuyên gia tâm lý phù hợp với bạn</h1>
+                    </div>
+
+                    <div class="order-searchContainer">
+
+
+                        <div class="select-option">
+                            <label for="menu">Đánh giá</label>
+                            <select id="vote" name="vote">
+                                <p>he</p>
+                                <option value="coffee">5</option>
+                                <option value="tea">4</option>
+                                <option value="juice">3</option>
+                                <option value="cake">2</option>
+                                <option value="cake">1</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="select-option">
+                            <label for="menu">Kinh Nghiệm</label>
+                            <select id="vote" name="vote">
+                                <p>he</p>
+                                <option value="coffee">Không</option>
+                                <option value="tea">1 năm</option>
+                                <option value="juice">2 - 10 năm</option>
+                                <option value="cake">10 - 15 năm</option>
+                            </select>
+                        </div>
+
+
+                        <div class="select-option">
+                            <label for="menu">Chi phi đặt lịch</label>
+                            <select id="vote" name="vote">
+                                <option value="coffee">10$</option>
+                                <option value="tea">15$</option>
+                                <option value="cake">20$</option>
+                                <option value="cake">25$</option>
+                                <option value="juice">Không</option>
+
+                            </select>
+                        </div>
+
+
+                        <div style="margin-top: 30px; display: flex;">
+
+                            <input type="submit" value="Tìm kiếm" style="background-color:
+                             #011A29; color: #D3D3D3;
+                              margin-top: 30px; width: 148px;
+                               height: 60px;
+                                border-radius: 10px; 
+                                margin-top: 40px;
+                                margin-left: -20px;
+
+                                ">
+
+
+                            <input type="submit" value="Trở lại" style="background-color: #C6B09A;
+                             color:  #011A29; margin-top: 30px; 
+                             width: 148px;
+                              height: 60px;
+                               border-radius:
+                                10px; border: none;
+                                  margin-top: 40px;
+                                  margin-left: 20px;">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="doctor-list">
+                <div class="title-note-wrapper">
+                    <h2 class="title">6 Chuyên gia tâm lý phù hợp</h2>
+                    <div class="note">Dưới đây là thông tin chi tiết</div>
+                </div>
+                <div class="doctors-list__1 ">
+                    <!-- doctor-item -->
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar"></div>
+                            <div class="name-info">
+                                <p class="name">Jane Doe</p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>9 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor1.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar" style="background-image: url('./assets/img/doctor/doctor2.png');"></div>
+                            <div class="name-info">
+                                <p class="name">Sam Wilson</p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>5 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor2.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar" style="background-image: url('./assets/img/doctor/doctor3.png');"></div>
+                            <div class="name-info">
+                                <p class="name">Dr Pepper Potts</p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>3 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor3.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="doctors-list__1 doctors-list__2 ">
+                    <!-- doctor-item -->
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar"
+                                style="background-image: url('./assets/img/doctor/doctor4.png'); background-size: cover">
+                            </div>
+                            <div class="name-info">
+                                <p class="name">Dr Tony Stark</p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>4 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor4.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar"
+                                style="background-image: url('./assets/img/doctor/doctor5.png'); background-size: cover">
+                            </div>
+                            <div class="name-info">
+                                <p class="name">Dr Meghan Carte</p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>3 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor5.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="doctor-item">
+                        <div class="doctor-info">
+                            <div class="avatar"
+                                style="background-image: url('./assets/img/doctor/doctor6.png'); background-size: cover;">
+                            </div>
+                            <div class="name-info">
+                                <p class="name">Dr Dev Patel </p>
+                                <div class="major exp">
+                                    <p class="major">
+                                        <img src="./assets/img/doctor/doctoricon.png" alt="">
+                                    <p>Bác sĩ</p>
+                                    </p>
+                                    <p class="exp">
+                                        <img src="./assets/img/doctor/doctorimg.png" alt="">
+                                    <p>2 năm</p>
+                                    </p>
+                                </div>
+                                <div class="review">
+                                    <p>Đánh giá: </p>
+                                    <p class="star">
+
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/star.png" alt="">
+                                        <img src="./assets/img/doctor/starnone.png" alt="" srcset="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-calendar">
+                            <a href="./order.doctor6.html" class="order-button" onclick="checkLinkAccess(event )">
+                                <button class="action" style="display: flex;">
+                                    Đặt lịch
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <div class="pagination">
+                        <button class="page-btn">
+                            <img src="./assets/icon/Pre.svg" alt="">
+                        </button>
+                        <p>prev</p>
+
+                        <button class="page-btn active-btn">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn">...</button>
+                        <button class="page-btn">21</button>
+                        <button class="page-btn">22</button>
+                        <button class="page-btn">23</button>
+                        <button class="page-btn">24</button>
+                        <p>next</p>
+                        <button class="page-btn">
+                            <img src="./assets/icon/next.svg" alt="">
+                        </button>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="check">
+        Hiện tại web không hỗ trợ xem trên điện thoại hoặc máy tính bảng, vui lòng dùng thiết bị có kích thước màn hình
+        to để
+        xem, cảm ơn!
+    </div>
+
+    <script src="./assets/js/checklogin.js"></script>
+    <script src="./assets/Fontico/js/all.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

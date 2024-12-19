@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.order-wrapper {
+    display: flex;
+}
+
+.hero-img {
+    width: 50%;
+    height: 200vh;
+    background-image: url('../img/order.jpeg');
+    background-size: cover;
+}
+
+.order-contents {
+    width: 50%;
+    /* height: 140vh; */
+    background-color: #011A29;
+}
+
+.title-wrapper {
+    width: 664px;
+    height: 359px;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+
+.title-wrapper h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    line-height: 90px;
+    font-weight: 500;
+    width: 600px;
+    /* height: 180px; */
+    letter-spacing: -1;
+}
+
+/* order-select option */
+.order {
+    position: relative;
+}
+
+.title-wrapper p {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 32.4px;
+    font-weight: 500;
+    width: 498px;
+    height: 96px;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+.order-box {
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+}
+
+.order-searchfield {
+    width: 80%;
+    height: 271px;
+    background-color: #fff;
+    box-shadow: #fff;
+
+    position: absolute;
+    bottom: 180px;
+    left: 150px;
+    border-radius: 10px;
+    filter: drop-shadow(0.1rem 0.1rem 0.8rem #888888);
+    margin-top: 40px;
+}
+
+.order-searchfield .title {
+    color: #0E2515;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32;
+    line-height: 39.1px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.order-searchContainer {
+    display: flex;
+    width: 92%;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.select-option {
+    width: 148px;
+    height: 96px;
+    padding-top: 40px;
+}
+
+.order-searchContainer label {
+    color: #8C8C8C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16;
+    line-height: 19.5px;
+    font-weight: 500;
+}
+
+select {
+    outline: none;
+    border: none;
+    width: 148px;
+    height: 60px;
+    background-color: #F5F5F5;
+    padding: 20px 24px 20px 24px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+select option {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16;
+    line-height: 19.5px;
+    font-weight: 500;
+}
+
+/*  doctor list */
+
+.doctor-list {
+    width: 100%;
+    height: 140vh;
+    padding: 120px 60px 60px 45px;
+}
+
+
+.title-note-wrapper {
+    width: 864px;
+    height: max-content;
+    margin: 0px auto;
+    gap: 16px;
+}
+
+.title-note-wrapper .title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 54px;
+    font-style: bold;
+    line-height: 90px;
+    font-weight: 500;
+    color: #011A29;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.title-note-wrapper .note {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #8C8C8C;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.doctors-list__1 {
+
+    width: 80%;
+    height: 500px;
+
+    margin: 0px auto;
+    display: flex;
+    gap: 16px;
+    /* border: 1px solid #011A29; */
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* doctor item */
+.doctors-list__1 .doctor-item {
+    width: 33.33%;
+    height: 500px;
+    /* background-color: #000; */
+    border-radius: 10px;
+    border: 1px solid #011A29;
+    display: flex;
+    flex-direction: column;
+}
+
+.doctors-list__1 .doctor-info {
+    width: 375px;
+    height: 310px;
+    padding: 10px 0px;
+
+}
+
+.doctors-list__1 .doctor-info .avatar {
+    margin: 0px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url('../img/doctor/doctor1.png');
+    background-size: cover;
+}
+
+.doctors-list__1 .doctor-info .name {
+    color: #011A29;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.doctor-info .major.exp {
+    color: #8C8C8C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.doctors-list__1 .major.exp .exp {
+    padding-left: 20px;
+}
+
+.doctor-info .major.exp img {
+    width: 20px;
+    height: 20px;
+}
+
+.doctor-info .review {
+    display: flex;
+    justify-content: center;
+    color: #8C8C8C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+.doctor-info .review .star img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+}
+
+
+.doctor-item .action-calendar .action {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    height: 62px;
+    border: none;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    color: #0E2515;
+    background-color: #DEDEDE;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.doctor-item .action-calendar .action:hover {
+    color: #DEDEDE;
+    background-color: #0E2515;
+}
+
+.doctors-list__2 {
+    margin-top: 40px;
+}
+
+
+/* navigation */
+.pagination {
+    width: 70%;
+    height: 80px;
+    margin: 0px auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.pagination button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+
+    /* border: 1px solid #011A29; */
+}
+
+.pagination button:nth-child(4) {
+    border: #011A29 1px solid;
+}
+
+
+
+.pagination button:hover {
+
+    background-color: #011A29;
+    color: #fff;
+    cursor: pointer;
+
+    /* border: 1px solid #011A29; */
+}
+
+.pagination button:first-child:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.pagination button:last-child:hover {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+
+.pagination button img {
+    width: 10px;
+    height: 10px;
+}
+
+.pagination p {
+    display: flex;
+    justify-content: center;
+    color: #8C8C8C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-weight: 500;
+    /* margin-bottom: 10px; */
+    text-align: center;
+}
+
+
+.action-calendar a {
+    text-decoration: none;
+}

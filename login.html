@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/customNav.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title> SoulSync | Login</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="navbar">
+
+                <div class="navbar-link">
+                    <div class="navbar-logo">
+                        <div class="logo-frame">
+                            <img class="logo-img" src="./assets/img/image.png" alt="" srcset="">
+                        </div>
+                        <div class="logo-brand__text">
+                            <p>SoulSync</p>
+                        </div>
+                    </div>
+                    <div class="navbar-links">
+
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Về chúng tôi </a></li>
+                        <li><a href="order.html">Đặt lịch tư vấn</a></li>
+                        <li><a href="soulAI.html">The soul AI</a></li>
+                        <li><a href="forum.html">Diễn đàn</a></li>
+                        <li><a href="contact.html" class="active">Liên hệ</a></li>
+
+                    </div>
+                </div>
+                <div class="navbar-button">
+                    <button class="navbar-btn" onclick="document.location = 'login.html'">Đăng nhập</button>
+                    <button class="navbar-btn" onclick="document.location = 'register.html'">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="hero-img">
+                <div class="Login-wrapper">
+                    <p>Đăng nhập</p>
+
+                    <div class="login-text">
+                        <div>
+                            <p style="color: #8c8c8c; display: inline;">Bạn là thành viên mới đúng không?</p>
+                            <a href="register.html" style="text-decoration: none; cursor: pointer;">
+                                <p style="color: #011A29; display: inline;">Hãy đăng ký tại đây</p>
+                            </a>
+                        </div>
+                        </p>
+                    </div>
+
+                    <!-- form login -->
+                    <form action="" method="post" class="formlogin">
+                        <div class="usernameClass">
+                            <label for="username">Username</label>
+                            <img src="./assets/icon/email.png" alt="">
+                            <input type="text" name="username" id="username" required>
+                        </div>
+                        <div style="margin-top: 10px;" class="usernameClass">
+                            <label for="password">Password</label>
+                            <img src="./assets/icon/password.png" alt="">
+                            <input class="ipassword" type="password" name="password" id='password'
+                                placeholder="Password" required>
+                            <img src="./assets/icon/eyes.png" alt="" class="hidepassword">
+                        </div>
+                        <div class="showhideStatus">
+                            <span class="showpasswordText  ">Hiển thị mật khẩu</span>
+                            <span class="hidepasswordText display">ẩn mật khẩu</span>
+                        </div>
+
+                        <input type="button" onclick="checkLogin()" value="Đăng nhập"
+                            style="background-color: #011A29; color: #D3D3D3; margin-top: 30px;">
+                        <input type="button" value="Trở lại"
+                            style="background-color: #C6B09A; color: #D3D3D3; margin-top: 30px;">
+                        <input type="button" value="Đăng nhập bằng facebook"
+                            style="background-color: #1f08ed; color: #D3D3D3; margin-top: 30px;">
+                        <input type="button" value="Đăng nhập bằng google " class="sign_btn"
+                            style="background-color: #e3b10d; color: #D3D3D3; margin-top: 30px;">
+                        <label for="" class="forgetPassword">Quên mật khẩu?</label>
+
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="check">
+        Hiện tại web không hỗ trợ xem trên điện thoại hoặc máy tính bảng, vui lòng dùng thiết bị có kích thước màn hình
+        to để
+        xem, cảm ơn!
+    </div>
+
+    <!-- info doctor -->
+
+
+    </div>
+    <script src="./assets/js/showhidepass.js"></script>
+    <script src="./assets/js/checklogin.js"></script>
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

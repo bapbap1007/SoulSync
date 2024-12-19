@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/customNav.css">
+    <link rel="stylesheet" href="./assets/css/forum.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <title>Soulsync | forum</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="navbar">
+
+                <div class="navbar-link">
+                    <div class="navbar-logo">
+                        <div class="logo-frame">
+                            <img class="logo-img" src="./assets/img/image.png" alt="" srcset="">
+                        </div>
+                        <div class="logo-brand__text">
+                            <p>SoulSync</p>
+                        </div>
+                    </div>
+                    <div class="navbar-links">
+
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="about.html">Về chúng tôi </a></li>
+                        <li><a href="order.html">Đặt lịch tư vấn</a></li>
+                        <li><a href="soulAI.html">The soul AI</a></li>
+                        <li><a href="forum.html" style="color:#011A29">Diễn đàn</a></li>
+                        <li><a href="contact.html">Liên hệ</a></li>
+
+                    </div>
+                </div>
+                <div class="navbar-button">
+                    <button class="navbar-btn" onclick="document.location = 'login.html'">Đăng nhập</button>
+                    <button class="navbar-btn" onclick="document.location = 'register.html'">Đăng ký</button>
+                </div>
+                <div class="user-dropdown">
+                    <div class="user-info">
+                        <span class="user-name">Xin chào, Hiền</span>
+                        <div class="dropdown-icon">&#9660;</div>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contents  -->
+        <div class="container">
+            <div class="order-searchfield">
+                <div class="title">
+                    <h1>Tìm kiểm câu trả lời cho câu hỏi của bạn</h1>
+                </div>
+
+                <div class="order-searchContainer">
+
+
+                    <div class="select-optionwrapper">
+                        <div class="select-option">
+                            <label for="menu">Loại</label>
+                            <select id="vote" name="vote">
+                                <option value="coffee">Tất cả</option>
+                                <option value="tea">Mới nhất</option>
+                            </select>
+                        </div>
+                        <div class="select-option">
+                            <label for="menu">Ngày</label>
+                            <select id="vote" name="vote">
+
+                                <option value="coffee">DD/MM/YYYY</option>
+                                <option value="coffee"> MM/DD/YYYY</option>
+                                <option value="coffee">YYYY/DD/MM</option>
+
+                            </select>
+                        </div>
+                        <div class="select-option">
+                            <label for="menu">Từ khóa</label>
+                            <input type="text">
+                            <!-- <select id="vote" name="vote">
+                        <option value="coffee">10$</option>
+                        <option value="tea">15$</option>
+                        <option value="cake">20$</option>
+                        <option value="cake">25$</option>
+                        <option value="juice">Không</option>
+
+                    </select> -->
+                        </div>
+                    </div>
+
+
+                    <div class="search-back">
+
+                        <input type="submit" value="Tìm kiếm" style="background-color:
+                         #011A29; color: #D3D3D3;
+                          margin-top: 30px; width: 148px;
+                           height: 60px;
+                            border-radius: 10px; 
+                            margin-top: 40px;
+                            margin-left: -20px;
+
+                            ">
+
+
+                        <input type="submit" value="Trở lại" style="background-color: #C6B09A;
+                         color:  #011A29; margin-top: 30px; 
+                         width: 148px;
+                          height: 60px;
+                           border-radius:
+                            10px; border: none;
+                              margin-top: 40px;
+                              margin-left: 20px;">
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- title -->
+            <div class="title-note-wrapper">
+                <h2 class="title">Diễn đàn SoulSync</h2>
+                <div class="note">Đọc tin tức mới nhất dành riêng cho bạn.</div>
+            </div>
+
+            <!-- post -->
+
+            <div class="postlist-wrapper">
+                <div class="post-wrapper">
+                    <div class="post-img"></div>
+                    <div class="post-decription">
+                        <div class="post-time">
+                            <p> Nutrition & Diet</p>
+                            <div class="circle"></div>
+                            <p>
+                                Tuesday, 17 May 2022
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            Chế độ ăn như thế nào để có sức khoẻ tinh
+                            thần tốt?
+                        </div>
+                        <div class="post-discription">
+                            Discover how a well-balanced diet can improve your energy, mental clarity, and long-term
+                            health.
+                        </div>
+                        <button class="postread-btn">Read</button>
+                    </div>
+                </div>
+
+                <div class="post-wrapper">
+                    <div class="post-img" style="
+                 background-image: url('./assets/post/post-img2.png'); 
+                 background-position: 0px 0px ;
+                "></div>
+                    <div class="post-decription">
+                        <div class="post-time">
+                            <p> Fitness</p>
+                            <div class="circle"></div>
+                            <p>
+                                Tuesday, 17 May 2022
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            Bài thể dục trong 20 phút
+                        </div>
+                        <div class="post-discription">
+                            Get fit in no time! These short, effective workouts are perfect for busy schedules, helping
+                            you
+                            stay active and healthy ...
+                        </div>
+                        <button class="postread-btn">Read</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="postlist-wrapper">
+                <div class="post-wrapper">
+                    <div class="post-img" style="background-image: url('./assets/post/post-img3.png');
+                background-position: 0px 0px;
+                "></div>
+                    <div class="post-decription">
+                        <div class="post-time">
+                            <p> Women’s Healtht</p>
+                            <div class="circle"></div>
+                            <p>
+                                Tuesday, 17 May 2022
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            Những thay đổi của bạn khi bạn 30
+                        </div>
+                        <div class="post-discription">
+                            Understanding the hormonal shifts that occur in your 30s can help you stay on top of your
+                            health. Learn what to expect and how ...
+                        </div>
+                        <button class="postread-btn">Read</button>
+                    </div>
+                </div>
+
+                <div class="post-wrapper">
+                    <div class="post-img" style="
+                ackground-image: url('./assets/post/post-img4.png');
+                background-position: 0px 0px;
+                "></div>
+                    <div class="post-decription">
+                        <div class="post-time">
+                            <p> Mental Health</p>
+                            <div class="circle"></div>
+                            <p>
+                                Tuesday, 17 May 2022
+                            </p>
+                        </div>
+                        <div class="post-title">
+                            Những tips giúp cải thiện sức khoẻ tinh thần
+                        </div>
+                        <div class="post-discription">
+                            Stay grounded with simple mindfulness practices. Learn how to integrate breathing exercises,
+                            meditation, and ...
+                        </div>
+                        <button class="postread-btn">Read</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- pagenavigation -->
+
+            <div class="navigation">
+                <div class="pagination">
+                    <button class="page-btn">
+                        <img src="./assets/icon/Pre.svg" alt="">
+                    </button>
+                    <p>prev</p>
+
+                    <button class="page-btn active-btn">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn">4</button>
+                    <button class="page-btn">...</button>
+                    <button class="page-btn">21</button>
+                    <button class="page-btn">22</button>
+                    <button class="page-btn">23</button>
+                    <button class="page-btn">24</button>
+                    <p>next</p>
+                    <button class="page-btn">
+                        <img src="./assets/icon/next.svg" alt="">
+                    </button>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="check">
+        Hiện tại web không hỗ trợ xem trên điện thoại hoặc máy tính bảng, vui lòng dùng thiết bị có kích thước màn hình
+        to để
+        xem, cảm ơn!
+    </div>
+    <script src="./assets/js/checklogin.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
