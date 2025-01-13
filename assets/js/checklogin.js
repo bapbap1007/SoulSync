@@ -7,8 +7,9 @@ const buttonlogout = document.querySelector(".dropdown-item");
 const client_id = `382338656678-k2610scbuke133bljklkjkbh48rn9tqf.apps.googleusercontent.com`;
 const url1 = 'https://ducmanhsuperdev.github.io/soulsync';
 const url2 = 'http//127.0.0.1:5500';
+const url3 = 'https://bapbap1007.github.io/soulsync/'
 
-const GET_LINK_TOKEN = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&response_type=token&redirect_uri=http://localhost:5500/index.html&client_id=${client_id}`
+const GET_LINK_TOKEN = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&response_type=token&redirect_uri=https://bapbap1007.github.io/soulsync/&client_id=${client_id}`
 document.addEventListener("DOMContentLoaded", () => {
     const signBtn = document.querySelector(".sign_btn");
     signBtn.addEventListener("click", () => {
