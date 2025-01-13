@@ -27,22 +27,22 @@
                 },
                 body: JSON.stringify(emailData), // Convert object thành JSON
             })
-            // .then(response => {
-            //     // Xử lý phản hồi từ server
-            //     return response.json().then(result => {
-            //         if (response.ok) {
-            //             alert("Email đã được gửi thành công!");
-            //         } else {
-            //             console.error("Error:", result.errors);
-            //             alert("Có lỗi xảy ra khi gửi email: " + result.errors);
-            //         }
-            //     });
-            // })
-            // .catch(error => {
-            //     // Xử lý lỗi khi fetch thất bại
-            //     console.error("Fetch Error:", error);
-            //     alert("Có lỗi xảy ra khi kết nối tới server!");
-            // });
+                .then(response => {
+                    // Xử lý phản hồi từ server
+                    return response.json().then(result => {
+                        if (response.ok) {
+                            alert("Email đã được gửi thành công!");
+                        } else {
+                            console.error("Error:", result.errors);
+                            alert("Có lỗi xảy ra khi gửi email: " + result.errors);
+                        }
+                    });
+                })
+                .catch(error => {
+                    // Xử lý lỗi khi fetch thất bại
+                    console.error("Fetch Error:", error);
+                    alert("Có lỗi xảy ra khi kết nối tới server!");
+                });
 
         }
 

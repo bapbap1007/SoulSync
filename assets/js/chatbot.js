@@ -39,6 +39,18 @@ function sendMessage() {
         if (input.value.toLowerCase() === "hi") { systemMessage = "chào bạn"; }
         else if (input.value.toLowerCase() === "bạn khỏe không") { systemMessage = "cảm ơn, tôi khỏe"; }
         else if (input.value.toLowerCase() === "cách giải stress") {
+            systemMessage = " 1. Khi bạn cảm thấy căng thẳng(stress), việc xử lý hiệu quả sẽ giúp bạn bình tĩnh hơn và cải thiện tâm trạng.Dưới đây là một số cách để giảm stress" +
+
+                "1. Hít thở sâu và thư giãn" +
+                "Thử kỹ thuật hít thở 4 - 7 - 8: Hít vào bằng mũi trong 4 giây, giữ hơi trong 7 giây, sau đó thở ra bằng miệng trong 8 giây." +
+                "Ngồi ở nơi yên tĩnh, nhắm mắt và tập trung vào hơi thở." +
+
+                "2. Tập thể dục hoặc vận động nhẹ" +
+                "•	Đi bộ, tập yoga, hoặc thực hiện một số bài tập thể dục nhẹ nhàng.Hoạt động thể chất giúp cơ thể sản sinh endorphin – hormone giảm stress tự nhiên." +
+
+                "3. Nghỉ ngơi và thư giãn" +
+                "Nghe nhạc, xem phim, hoặc đọc sách yêu thích." +
+                "Thử các phương pháp thư giãn như thiền, massage, hoặc ngâm mình trong nước ấm"
 
 
         }
