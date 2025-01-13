@@ -9,11 +9,12 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
         alert('Vui lòng điền đầy đủ thông tin trước khi đặt lịch.');
     } else {
         const checkcon = confirm(`Bạn có muốn xác nhận đặt lịch không? !\nThời gian: ${time}\nMô tả: ${description}\nĐánh giá: ${rating} sao`);
-        const email = JSON.parse(localStorage.getItem('user')).email;
-        sendEmail(email, time);
+
 
         if (checkcon) {
             alert("lịch được đặt thành công, chúng tôi đã gửi email tới bạn, vui lòng kiểm tra hộp thư tại email bạn đăng kí với chúng tôi");
+            const email = JSON.parse(localStorage.getItem('user')).email;
+            sendEmail(email, time);
             window.location.href = 'index.html';
         }
         else {
