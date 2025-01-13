@@ -5,7 +5,7 @@
 const userInfo = document.querySelector('.user-info');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const body = document.querySelector('.wrapper');
-console.log(body);
+
 
 const check = document.querySelector('.check');
 
@@ -86,6 +86,9 @@ function fadeOut() {
 
 // // Lắng nghe sự kiện resize để kiểm tra lại khi kích thước thay đổi
 window.addEventListener('resize', checkWidth);
+
+
+
 
 
 

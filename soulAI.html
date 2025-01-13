@@ -60,17 +60,22 @@
         <!-- soul ai content -->
 
         <div class="soulAI-wrapper">
-            <div class="search-wrapper">
-                <p class="title">THE SOUL AI</p>
-                <div class="search-button">
-                    <input type="text" placeholder="Tìm kiếm">
-                </div>
+            <div class="title text">THE SOULAI</div>
+
+            <div class="chatbotAImessageWrapper" id="chatBox">
+                <div class="user_message"></div>
+                <div class="system_message"></div>
             </div>
+
+            <div class="wrapperInput">
+                <input type="text" class="inputText" id="userInput" placeholder="Bạn cần gì?">
+                <button class="inputSend">send</button>
+            </div>
+
         </div>
 
 
     </div>
-
 
 
     <div class="check">
@@ -78,8 +83,11 @@
         to để
         xem, cảm ơn!
     </div>
+
+
     <script src="./assets/js/checklogin.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/chatbot.js"></script>
 
 </body>
 
