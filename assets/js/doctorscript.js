@@ -4,6 +4,9 @@ document.querySelector('.submit-btn').addEventListener('click', function () {
     const time = document.querySelector('input[type="datetime-local"]').value;
     const description = document.querySelector('textarea').value;
     const rating = document.querySelector('select').value;
+    // const doctorname = document.querySelector("h2").getHTML;
+    // console.log(doctorname);
+
 
     if (!time || !description) {
         alert('Vui lòng điền đầy đủ thông tin trước khi đặt lịch.');
@@ -37,7 +40,8 @@ function sendEmail(email, time) {
     const emailData = {
         email: email, // Địa chỉ email người nhận
         subject: "SoulSync Đặt Lịch thành công", // Tiêu đề email
-        content: `Bạn đã đặt lịch khám thành công, thời gian khám của bạn là ${time}, đội ngũ SoulSync chúng tôi luôn mong muốn phục vụ bệnh nhân tốt nhất, xin cảm ơn!` // Nội dung email
+        content: `Bạn đã đặt lịch khám thành công, thời gian khám của bạn là ${time}` + `
+        đội ngũ SoulSync chúng tôi luôn mong muốn phục vụ bệnh nhân tốt nhất, xin cảm ơn!` // Nội dung email
     };
 
     // Gửi yêu cầu POST đến API

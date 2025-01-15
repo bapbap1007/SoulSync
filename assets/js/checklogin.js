@@ -11,6 +11,9 @@ const url3 = 'https://bapbap1007.github.io/soulsync/'
 
 const GET_LINK_TOKEN = `https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile&response_type=token&redirect_uri=https://bapbap1007.github.io/soulsync/&client_id=${client_id}`
 document.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem('logged') === null) {
+        localStorage.setItem('logged', false);
+    }
     const signBtn = document.querySelector(".sign_btn");
     signBtn.addEventListener("click", () => {
         window.location.href = GET_LINK_TOKEN
@@ -108,7 +111,6 @@ function checkLinkAccess(event) {
     // localStorage.setItem('logged', userdata.name);
     const logged = JSON.parse(localStorage.getItem('logged'));
     console.log(logged);
-
     if (logged == false) {
         event.preventDefault();
         alert("Bạn cần đăng nhập để tiếp tục.");
@@ -130,6 +132,6 @@ buttonlogout.onclick = function () {
 
 }
 
-// checkLinkAccess(); 
+// checkLinkAccess();
 
 checklogin(); 
